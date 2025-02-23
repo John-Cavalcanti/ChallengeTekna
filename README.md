@@ -4,12 +4,26 @@
 
 This challenge requires to create an access to a google sheets database, then make manipulations on the columns so we can calculate the average grades of the students.
 
+## 📌 Table of Contents
+- [Challenge description](#challenge-description)
+- [Guide to run the code](#guide-to-run-the-code)
+  - [1 - Python installation](#1---python-installation)
+  - [2 - Preparing the environment](#2---preparing-the-environment)
+  - [3 - Installing dependencies](#3---installing-dependencies)
+  - [4 - Running the code](#4---running-the-code)
+- [Credentials - Important!](#credentials---important)
+- [Credits and Contacts](#credits-and-contacts)
+
+---
+
 ## Guide to run the code 
 
 This project was developed using python 3 and some of their libraries, alogside with some google libraries so that we can access the google sheet.
 Then following there is a guide to help you run the code.
 
 Follow it step by step to prevent errors.
+
+---
 
 ### 1 - Python installation
 
@@ -43,9 +57,11 @@ python3 --version
 pip --version
 ```
 
-### 2 - Preparing the enviroment
+---
 
-We are gonna use venv to keep an isolate enviroment so we can instaal dependencies without setting them globally and our application can run smoothly.
+### 2 - Preparing the environment
+
+We are gonna use venv to keep an isolate environment so we can install dependencies without setting them globally and our application can run smoothly.
 
 On ubuntu run the code below to install venv :
 
@@ -53,9 +69,9 @@ On ubuntu run the code below to install venv :
 sudo apt install python3-venv
 ```
 
-Note: On windows there is no need to install the venv package since it already comes along with the instalation of Python 3.3 and beyond.
+> Note: On windows there is no need to install the `venv` package since it already comes along with the instalation of Python 3.3 and beyond.
 
-Now to setup the enviroment on the command prompt of your preference, run the code:
+Now to setup the environment on the command prompt of your preference, run the code:
 
 Ubuntu (or git bash on windows) :
 ```bash
@@ -63,10 +79,15 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 
-Windows (Powershell or cmd):
+Windows (CMD or PowerShell):
 ```bash
 python -m venv venv
 venv\Scripts\activate
+```
+
+Windows (PowerShell alternativ):
+```bash
+venv\Scripts\activate.bat
 ```
 
 Windows (git bash):
@@ -74,17 +95,25 @@ Windows (git bash):
 source venv/Scripts/activate
 ```
 
-You should see something like (venv) before the path on your terminal indicating that the enviroment is active.
+You should see something like `(venv)` before the path on your terminal indicating that the environment is active.
 
-# CREDENTIALS - IMPORTANT !
+--- 
 
-Before we install the dependencies we need the credentials for the code to access the sheet we want to manipulate, so the link with the TeknaChallenge-chave.json file will be sent via email, you will need to download the file and place in the root of the directory so the code can access the credentials correctly like this : 
+### 3 - CREDENTIALS - IMPORTANT !
+
+Before installing dependencies, you need credentials for accessing the Google Sheet.
+
+1. You will receive the `TeknaChallenge-chave.json` file via email.
+2. Download and place it in the **root directory** of the project.
+3. The structure should look like this:
 
 ![](./assets/readme_imgs/root_directory_with_key.png)
+ 
+ ---
 
-### 3 - Installing dependencies
+### 4 - Installing dependencies
 
-Before we run the code we need to make sure all of the dependencies used in the projext are installed.
+Before we run the code we need to make sure all of the dependencies used in the project are installed.
 
 Luckily there is a requirement.txt in the root of the repository that you can run with the command :
 
@@ -92,7 +121,9 @@ Luckily there is a requirement.txt in the root of the repository that you can ru
 pip install -r requirements.txt
 ```
 
-### 4 - Runnig the code
+---
+
+### 5 - Running the code
 
 Finally we can run the code after all of the setup, you can run the code with the command :
 
@@ -109,3 +140,13 @@ python3 main.py
 It should show the menu for choosing the options of what you want to do with the project :  
 
 ![](./assets/readme_imgs/options_menu.png)
+
+After that you should choose the options for manipulating the sheet or leaving the menu, terminating the program.
+
+---
+
+## Credits and Contacts
+
+This project was made by [João Victor Cavalcanti(me :D)](https://www.linkedin.com/in/joaovictorcavalcanti272105196/)
+
+Feel free to contact me on my email : jvictorao123@gmail.com
