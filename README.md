@@ -9,6 +9,8 @@ This challenge requires to create an access to a google sheets database, then ma
 This project was developed using python 3 and some of their libraries, alogside with some google libraries so that we can access the google sheet.
 Then following there is a guide to help you run the code.
 
+Follow it step by step to prevent errors.
+
 ### 1 - Python installation
 
 First we need to make sure that our engine is working. Check if python3 is installed in you computer, run this code on the terminal of your preference(i recommend git bash if you are on windows) :
@@ -55,21 +57,30 @@ Note: On windows there is no need to install the venv package since it already c
 
 Now to setup the enviroment on the command prompt of your preference, run the code:
 
-Windows:
-```bash
-python -m venv venv
-venv\Scripts\activate
-```
-
-Ubuntu :
+Ubuntu (or git bash on windows) :
 ```bash
 python3 -m venv venv
 source venv/bin/activate
 ```
 
+Windows (Powershell or cmd):
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+Windows (git bash):
+```bash
+source venv/Scripts/activate
+```
+
 You should see something like (venv) before the path on your terminal indicating that the enviroment is active.
 
-Before we install the dependencies we need the credentials for the code to access the sheet we want to manipulate, so the link with the TeknaChallenge-chave.json file will be sent via email, you will need to download the file and place in the root of the directory so the code can access the credentials correctly. 
+# CREDENTIALS - IMPORTANT !
+
+Before we install the dependencies we need the credentials for the code to access the sheet we want to manipulate, so the link with the TeknaChallenge-chave.json file will be sent via email, you will need to download the file and place in the root of the directory so the code can access the credentials correctly like this : 
+
+![](./assets/readme_imgs/root_directory_with_key.png)
 
 ### 3 - Installing dependencies
 
@@ -95,4 +106,6 @@ Ubuntu :
 python3 main.py
 ```
 
-It should show the menu for choosing the options of what you want to do with the project.
+It should show the menu for choosing the options of what you want to do with the project :  
+
+![](./assets/readme_imgs/options_menu.png)
