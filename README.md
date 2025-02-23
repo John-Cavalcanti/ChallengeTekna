@@ -9,9 +9,9 @@ This challenge requires to create an access to a google sheets database, then ma
 - [Guide to run the code](#guide-to-run-the-code)
   - [1 - Python installation](#1---python-installation)
   - [2 - Preparing the environment](#2---preparing-the-environment)
-  - [3 - Installing dependencies](#3---installing-dependencies)
-  - [4 - Running the code](#4---running-the-code)
-- [Credentials - Important!](#credentials---important)
+  - [3 - Credential Important](#3---credentials---important-)
+  - [4 - Installing dependencies](#4---installing-dependencies)
+  - [5 - Running the code](#5---running-the-code)
 - [Credits and Contacts](#credits-and-contacts)
 
 ---
